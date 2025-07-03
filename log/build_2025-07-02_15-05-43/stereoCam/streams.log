@@ -1,0 +1,38 @@
+[0.359s] Invoking command in '/home/deeric/belajar-ROS/ros2_ws/src/stereoCam': PS1=[\u\]$ PYTHONPATH=/home/deeric/belajar-ROS/ros2_ws/build/stereoCam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/deeric/belajar-ROS/ros2_ws/install/stereoCam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stereoCam build --build-base /home/deeric/belajar-ROS/ros2_ws/build/stereoCam/build install --record /home/deeric/belajar-ROS/ros2_ws/build/stereoCam/install.log --single-version-externally-managed install_data
+[0.498s] running egg_info
+[0.499s] creating ../../build/stereoCam/stereoCam.egg-info
+[0.499s] writing ../../build/stereoCam/stereoCam.egg-info/PKG-INFO
+[0.499s] writing dependency_links to ../../build/stereoCam/stereoCam.egg-info/dependency_links.txt
+[0.499s] writing entry points to ../../build/stereoCam/stereoCam.egg-info/entry_points.txt
+[0.499s] writing requirements to ../../build/stereoCam/stereoCam.egg-info/requires.txt
+[0.499s] writing top-level names to ../../build/stereoCam/stereoCam.egg-info/top_level.txt
+[0.499s] writing manifest file '../../build/stereoCam/stereoCam.egg-info/SOURCES.txt'
+[0.500s] reading manifest file '../../build/stereoCam/stereoCam.egg-info/SOURCES.txt'
+[0.501s] adding license file 'LICENSE'
+[0.501s] writing manifest file '../../build/stereoCam/stereoCam.egg-info/SOURCES.txt'
+[0.501s] running build
+[0.501s] running build_py
+[0.501s] creating /home/deeric/belajar-ROS/ros2_ws/build/stereoCam/build
+[0.501s] creating /home/deeric/belajar-ROS/ros2_ws/build/stereoCam/build/lib
+[0.502s] creating /home/deeric/belajar-ROS/ros2_ws/build/stereoCam/build/lib/stereoCam
+[0.502s] copying stereoCam/publisher.py -> /home/deeric/belajar-ROS/ros2_ws/build/stereoCam/build/lib/stereoCam
+[0.502s] copying stereoCam/__init__.py -> /home/deeric/belajar-ROS/ros2_ws/build/stereoCam/build/lib/stereoCam
+[0.502s] running install
+[0.502s] running install_lib
+[0.502s] creating /home/deeric/belajar-ROS/ros2_ws/install/stereoCam/lib/python3.10/site-packages/stereoCam
+[0.502s] copying /home/deeric/belajar-ROS/ros2_ws/build/stereoCam/build/lib/stereoCam/publisher.py -> /home/deeric/belajar-ROS/ros2_ws/install/stereoCam/lib/python3.10/site-packages/stereoCam
+[0.502s] copying /home/deeric/belajar-ROS/ros2_ws/build/stereoCam/build/lib/stereoCam/__init__.py -> /home/deeric/belajar-ROS/ros2_ws/install/stereoCam/lib/python3.10/site-packages/stereoCam
+[0.503s] byte-compiling /home/deeric/belajar-ROS/ros2_ws/install/stereoCam/lib/python3.10/site-packages/stereoCam/publisher.py to publisher.cpython-310.pyc
+[0.503s] byte-compiling /home/deeric/belajar-ROS/ros2_ws/install/stereoCam/lib/python3.10/site-packages/stereoCam/__init__.py to __init__.cpython-310.pyc
+[0.503s] running install_data
+[0.503s] creating /home/deeric/belajar-ROS/ros2_ws/install/stereoCam/share/ament_index
+[0.503s] creating /home/deeric/belajar-ROS/ros2_ws/install/stereoCam/share/ament_index/resource_index
+[0.503s] creating /home/deeric/belajar-ROS/ros2_ws/install/stereoCam/share/ament_index/resource_index/packages
+[0.503s] copying resource/stereoCam -> /home/deeric/belajar-ROS/ros2_ws/install/stereoCam/share/ament_index/resource_index/packages
+[0.503s] copying package.xml -> /home/deeric/belajar-ROS/ros2_ws/install/stereoCam/share/stereoCam
+[0.503s] running install_egg_info
+[0.504s] Copying ../../build/stereoCam/stereoCam.egg-info to /home/deeric/belajar-ROS/ros2_ws/install/stereoCam/lib/python3.10/site-packages/stereoCam-0.0.0-py3.10.egg-info
+[0.505s] running install_scripts
+[0.518s] Installing publisher script to /home/deeric/belajar-ROS/ros2_ws/install/stereoCam/lib/stereoCam
+[0.518s] writing list of installed files to '/home/deeric/belajar-ROS/ros2_ws/build/stereoCam/install.log'
+[0.536s] Invoked command in '/home/deeric/belajar-ROS/ros2_ws/src/stereoCam' returned '0': PS1=[\u\]$ PYTHONPATH=/home/deeric/belajar-ROS/ros2_ws/build/stereoCam/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/deeric/belajar-ROS/ros2_ws/install/stereoCam/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stereoCam build --build-base /home/deeric/belajar-ROS/ros2_ws/build/stereoCam/build install --record /home/deeric/belajar-ROS/ros2_ws/build/stereoCam/install.log --single-version-externally-managed install_data
