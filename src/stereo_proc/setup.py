@@ -3,7 +3,7 @@ import os
 from glob import glob
 from setuptools import setup
 from setuptools import find_packages
-package_name = 'state_publisher'
+package_name = 'stereo_proc'
 
 setup(
     name=package_name,
@@ -14,11 +14,8 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
   (os.path.join('share', package_name, 'launch'), glob('launch/*')),
-  (os.path.join('share', package_name), glob('urdf/*')),
        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
        # in your data_files list:
-(os.path.join('share', package_name, 'urdf'), glob('urdf/*.urdf')),
-    (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
 
     ],
     install_requires=['setuptools'],
@@ -30,8 +27,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-'state_publisher = state_publisher.state_publisher:main',
-        'odom_to_tf = state_publisher.odom_to_tf:main',
+'stereo_proc = my_node.stereo_proc:main',
         ],
     },
 )
