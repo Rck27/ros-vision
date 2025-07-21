@@ -1,0 +1,46 @@
+
+global_costmap:
+  global_frame: world # Or 'map' depending on your setup
+  robot_base_frame: base_link
+  # ... other params ...
+  plugins: ["static_layer", "obstacle_layer", "inflation_layer"] # Make sure obstacle_layer is listed
+
+  obstacle_layer:
+    plugin: "nav2_costmap_2d::ObstacleLayer"
+    enabled: true
+    observation_sources: stereo_cloud  # A name you choose for this source
+    
+    stereo_cloud:
+      topic: /stereo/points2          # <--- YOUR POINTCLOUD2 TOPIC
+      data_type: PointCloud2          # <--- THE MESSAGE TYPE
+      max_obstacle_height: 2.0        # Max height of obstacles to consider (in meters)
+      min_obstacle_height: 0.05       # Min height of obstacles to consider (e.g., ignore floor noise)
+      obstacle_range: 5.0             # Max range to consider points from the sensor (in meters)
+      raytrace_range: 6.0             # Max range to clear free space behind obstacles
+      marking: true                   # Add points as obstacles
+      clearing: true                  # Clear space based on raytracing
+      # The frame_id of your sensor, must match what you publish
+      sensor_frame: camera_mount      
+      
+# You will likely have a very similar configuration for your local_costmap
+local_costmap:
+  # ...
+  plugins: ["obstacle_layer", "inflation_layer"]
+
+  obstacle_layer:
+    plugin: "nav2_costmap_2d::ObstacleLayer"
+    enabled: true
+    observation_sources: stereo_cloud
+    
+    stereo_cloud:
+      topic: /stereo/points2
+      data_type: PointCloud2
+      # ... other parameters are the same or can be tuned differently ...
+      max_obstacle_height: 2.0
+      min_obstacle_height: 0.05
+      obstacle_range: 3.0
+      raytrace_range: 4.0
+      marking: true
+      clearing: true
+      sensor_frame: camera_mount
+# ...
